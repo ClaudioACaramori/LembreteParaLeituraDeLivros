@@ -6,6 +6,7 @@ package entidades;
 public class Livro {
     private String nomeDoLivro;
     private int numeroDePaginas;
+    private Integer id;
 
     public String getNomeDoLivro() {
         return nomeDoLivro;
@@ -21,5 +22,13 @@ public class Livro {
 
     public void setNumeroDePaginas(int numeroDePaginas) {
         this.numeroDePaginas = numeroDePaginas;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

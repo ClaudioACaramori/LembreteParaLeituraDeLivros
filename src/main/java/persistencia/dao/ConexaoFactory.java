@@ -1,4 +1,4 @@
-package persistencia.jdbc;
+package persistencia.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,7 +11,7 @@ public class ConexaoFactory {
 
     private static Connection connection;
     public static Connection getConnection() {
-        String url = "jdbc:postgresql://localhost:5432/fabricawebdb";
+        String url = "dao:postgresql://localhost:5432/fabricawebdb";
         String usuario = "postgres";
         String senha = "postgres";
 
