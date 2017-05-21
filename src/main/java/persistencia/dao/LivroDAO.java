@@ -1,7 +1,7 @@
-package persistencia;
+package persistencia.dao;
 
 import entidades.Livro;
-import persistencia.dao.ConexaoFactory;
+import persistencia.jdbc.ConexaoFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

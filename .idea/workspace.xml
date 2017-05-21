@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2d1a53d-b37f-46d3-8f75-fbc7b79382ce" name="Default" comment="Conclusão da classe LivroDAO e Livro. Inicio da classe Lembrete">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/persistencia/dao/ConexaoFactory.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/persistencia/LivroDAO.java" afterPath="$PROJECT_DIR$/src/main/java/persistencia/dao/LivroDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/persistencia/dao/ConexaoFactory.java" afterPath="$PROJECT_DIR$/src/main/java/persistencia/jdbc/ConexaoFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teste-jera-lembrete-de-livros" afterPath="$PROJECT_DIR$/teste-jera-lembrete-de-livros" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teste-jera-lembrete-de-livros/.gitignore" afterPath="$PROJECT_DIR$/teste-jera-lembrete-de-livros/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teste-jera-lembrete-de-livros/README.md" afterPath="$PROJECT_DIR$/teste-jera-lembrete-de-livros/README.md" />
@@ -44,7 +47,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-23.538462">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -61,17 +64,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LivroDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/LivroDAO.java">
+      <file leaf-file-name="LivroDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/dao/LivroDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7306338">
+            <state vertical-scroll-proportion="0.0">
               <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
               <folding>
-                <marker date="1495398801103" expanded="true" signature="460:520" placeholder="INSERT INTO livro... " />
-                <marker date="1495398801103" expanded="true" signature="1062:1128" placeholder="UPDATE livro... " />
-                <marker date="1495398801103" expanded="true" signature="2194:2213" placeholder="SELECT * FRO... livro" />
-                <marker date="1495398801103" expanded="true" signature="3004:3045" placeholder="SELECT * FRO... livro" />
+                <marker date="1495399160655" expanded="true" signature="465:525" placeholder="INSERT INTO livro... " />
+                <marker date="1495399160655" expanded="true" signature="1067:1133" placeholder="UPDATE livro... " />
+                <marker date="1495399160655" expanded="true" signature="2199:2218" placeholder="SELECT * FRO... livro" />
+                <marker date="1495399160655" expanded="true" signature="3009:3050" placeholder="SELECT * FRO... livro" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConexaoFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/jdbc/ConexaoFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LembreteDAO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LembreteDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/dao/LembreteDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.4190141">
               <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -145,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Lembrete.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProgramaPrincipal.java" />
         <option value="$PROJECT_DIR$/src/main/java/CadastroDeLivro.java" />
-        <option value="$PROJECT_DIR$/src/main/java/persistencia/jdbc/ConexaoFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/DiasDaSemana.java" />
         <option value="$PROJECT_DIR$/teste-jera-lembrete-de-livros/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -153,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/main/java/persistencia/LivroDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/entidades/Lembrete.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistencia/dao/LembreteDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/persistencia/jdbc/ConexaoFactory.java" />
       </list>
     </option>
   </component>
@@ -354,6 +367,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="persistencia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -882,15 +899,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/LivroDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/dao/LivroDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
           <folding>
-            <marker date="1495398801103" expanded="true" signature="460:520" placeholder="INSERT INTO livro... " />
-            <marker date="1495398801103" expanded="true" signature="1062:1128" placeholder="UPDATE livro... " />
-            <marker date="1495398801103" expanded="true" signature="2194:2213" placeholder="SELECT * FRO... livro" />
-            <marker date="1495398801103" expanded="true" signature="3004:3045" placeholder="SELECT * FRO... livro" />
+            <marker date="1495399160655" expanded="true" signature="465:525" placeholder="INSERT INTO livro... " />
+            <marker date="1495399160655" expanded="true" signature="1067:1133" placeholder="UPDATE livro... " />
+            <marker date="1495399160655" expanded="true" signature="2199:2218" placeholder="SELECT * FRO... livro" />
+            <marker date="1495399160655" expanded="true" signature="3009:3050" placeholder="SELECT * FRO... livro" />
           </folding>
         </state>
       </provider>
@@ -942,15 +959,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/LivroDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/dao/LivroDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1495398801103" expanded="true" signature="460:520" placeholder="INSERT INTO livro... " />
-            <marker date="1495398801103" expanded="true" signature="1062:1128" placeholder="UPDATE livro... " />
-            <marker date="1495398801103" expanded="true" signature="2194:2213" placeholder="SELECT * FRO... livro" />
-            <marker date="1495398801103" expanded="true" signature="3004:3045" placeholder="SELECT * FRO... livro" />
+            <marker date="1495399160655" expanded="true" signature="465:525" placeholder="INSERT INTO livro... " />
+            <marker date="1495399160655" expanded="true" signature="1067:1133" placeholder="UPDATE livro... " />
+            <marker date="1495399160655" expanded="true" signature="2199:2218" placeholder="SELECT * FRO... livro" />
+            <marker date="1495399160655" expanded="true" signature="3009:3050" placeholder="SELECT * FRO... livro" />
           </folding>
         </state>
       </provider>
@@ -995,7 +1012,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-23.538462">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
@@ -1030,25 +1047,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/dao/LembreteDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/dao/LivroDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1495399160655" expanded="true" signature="465:525" placeholder="INSERT INTO livro... " />
+            <marker date="1495399160655" expanded="true" signature="1067:1133" placeholder="UPDATE livro... " />
+            <marker date="1495399160655" expanded="true" signature="2199:2218" placeholder="SELECT * FRO... livro" />
+            <marker date="1495399160655" expanded="true" signature="3009:3050" placeholder="SELECT * FRO... livro" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/LivroDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/jdbc/ConexaoFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7306338">
-          <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistencia/dao/LembreteDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4190141">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
-            <marker date="1495398801103" expanded="true" signature="460:520" placeholder="INSERT INTO livro... " />
-            <marker date="1495398801103" expanded="true" signature="1062:1128" placeholder="UPDATE livro... " />
-            <marker date="1495398801103" expanded="true" signature="2194:2213" placeholder="SELECT * FRO... livro" />
-            <marker date="1495398801103" expanded="true" signature="3004:3045" placeholder="SELECT * FRO... livro" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
