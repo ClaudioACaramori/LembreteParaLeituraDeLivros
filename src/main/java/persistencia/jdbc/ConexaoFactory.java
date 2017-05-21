@@ -11,15 +11,13 @@ public class ConexaoFactory {
 
     private static Connection connection;
     public static Connection getConnection() {
-        String url = "dao:postgresql://localhost:5432/fabricawebdb";
+        String url = "dao:postgresql://localhost:5432/testejeradb";
         String usuario = "postgres";
         String senha = "postgres";
 
         try {
             Class.forName("org.postgresql.Driver");
-            //Singleton
             if (connection==null){
-                //cria um novo
                 connection =  DriverManager.getConnection(url, usuario, senha);
             }
         } catch (SQLException | ClassNotFoundException e) {
