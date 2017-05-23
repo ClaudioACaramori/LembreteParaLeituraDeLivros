@@ -4,5 +4,6 @@
         version="2.0">
         
   <persistence-unit name="testejera" transaction-type="RESOURCE_LOCAL">
+      <class>br.com.testejera.entidade.Livro</class>
    </persistence-unit>
 </persistence>

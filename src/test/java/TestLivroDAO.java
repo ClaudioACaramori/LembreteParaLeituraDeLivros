@@ -1,6 +1,6 @@
-import entidades.Livro;
-import persistencia.dao.DAOException;
-import persistencia.dao.LivroDAO;
+import br.com.testejera.entidade.Livro;
+import br.com.testejera.persistencia.dao.DAOException;
+import br.com.testejera.persistencia.dao.LivroDAO;
 
 import java.util.List;
 
@@ -33,7 +33,7 @@ public class TestLivroDAO {
 
     public static void testAlterar() throws DAOException{
         Livro livroBuscado = livroDAO.buscarPorId(1);
-        livroBuscado.setNomeDoLivro("Zé");
+        livroBuscado.setNomeDoLivro("Java for Ninjas");
         livroDAO.salvar(livroBuscado);
     }
 

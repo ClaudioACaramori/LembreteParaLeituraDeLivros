@@ -10,12 +10,45 @@
 		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
 
+	<!--  Reconhecer anotacao de @Transactional -->
+	<tx:annotation-driven/>
+	<context:component-scan base-package="br.com.testejera"/>
+
 	<!-- Configuracao do DataSource para conexao com o banco -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="org.postgresql.Driver"/>
 		<property name="url"
-				  value="jdbc:postgresql://localhost:5432/testejeralivros" />
+				  value="jdbc:postgresql://localhost:5432/testejeradb" />
 		<property name="username" value="postgres" />
 		<property name="password" value="postgres" />
 	</bean>
+
+	<!-- Criando um EntityManagerFactory pelo Spring -->
+	<bean id="entityManagerFactory"
+		  class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+
+		<property name="dataSource" ref="dataSource" />
+		<property name="persistenceUnitName" value="testejera" />
+		<property name="jpaVendorAdapter">
+
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+
+				<property name="generateDdl" value="true" />
+				<property name="showSql" value="true" />
+				<property name="databasePlatform"
+						  value="org.hibernate.dialect.PostgreSQLDialect" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		  class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<!--<bean id="livro" class="br.com.testejera.entidade.Livro">
+		<property name="nomeDoLivro" value="Apostila Fabrica de Programador - Modulo I"/>
+		<property name="numeroDePaginas" value="54"/>
+	</bean>-->
+
 </beans>
