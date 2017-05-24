@@ -2,6 +2,7 @@ import br.com.testejera.entidade.Livro;
 import br.com.testejera.persistencia.dao.DAOException;
 import br.com.testejera.persistencia.dao.LivroDAO;
 
+import javax.persistence.EntityManager;
 import java.util.List;
 
 /**
@@ -10,6 +11,8 @@ import java.util.List;
 public class TestLivroDAO {
 
     static LivroDAO<Livro> livroDAO;
+
+    EntityManager entityManager;
 
     public static void main(String[] args) throws DAOException {
         testInserir();
@@ -26,17 +29,6 @@ public class TestLivroDAO {
         livroDAO.salvar(new Livro("Java For Dummies", 350));
     }
 
-    public static void testBuscarPorId(){
-        Livro livroBuscado = livroDAO.buscarPorId(1);
-        System.out.println(livroBuscado.getId() +  " " + livroBuscado.getNomeDoLivro() );
-    }
-
-    public static void testAlterar() throws DAOException{
-        Livro livroBuscado = livroDAO.buscarPorId(1);
-        livroBuscado.setNomeDoLivro("Java for Ninjas");
-        livroDAO.salvar(livroBuscado);
-    }
-
     public static void testBuscarTodos(){
         List<Livro> buscarTodos = livroDAO.buscarTodos();
         for(Livro livro: buscarTodos){
@@ -44,14 +36,8 @@ public class TestLivroDAO {
         }
     }
 
+    public void excluir(Livro livro) {
+        entityManager.remove(entityManager.getReference(Livro.class,livro.getId()));
+        }
 
-    public static void testBuscarPorNomeDoLivro(){
-        Livro livroBuscado = livroDAO.buscarPorNomeDoLivro("Java For Dummies");
-        System.out.println(livroBuscado.getId() +  " " + livroBuscado.getNomeDoLivro() );
-    }
-
-    public static void testExcluir (){
-        Livro livroBuscado = livroDAO.buscarPorId(1);
-        livroDAO.remover(livroBuscado);
-    }
 }

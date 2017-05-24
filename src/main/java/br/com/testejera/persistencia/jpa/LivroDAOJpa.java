@@ -1,13 +1,12 @@
 package br.com.testejera.persistencia.jpa;
 
 import br.com.testejera.entidade.Livro;
+import br.com.testejera.persistencia.dao.DAOException;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import br.com.testejera.persistencia.dao.LivroDAO;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -35,11 +34,23 @@ public class LivroDAOJpa implements LivroDAO{
         return query.getResultList();
     }
 
-    public Livro buscarPorNomeDoLivro(String nomeDoLivro) {
-        return entityManager.find(Livro.class,nomeDoLivro);
+    @Override
+    public Livro buscarNomeDoLivro(String nomeDoLivro) throws DAOException {
+        try{
+            String jpql = "SELECT l FROM Livro l WHERE l.nomeDoLivro=:nomeDoLivroParam";
+
+            Query consulta = entityManager.createQuery(jpql);
+            consulta.setParameter("nomeDoLivroParam", nomeDoLivro);
+
+            return (Livro) consulta.getSingleResult();
+        }catch (NoResultException e){
+            throw new DAOException("Nenhum livro encontrado!");
+        }catch (NonUniqueResultException e){
+            throw new DAOException("Mais de um livro encontrado!");
+        }catch (Exception e){
+            throw new DAOException(e);
+        }
     }
 
-    public Livro buscarPorId(int id) {
-        return entityManager.find(Livro.class,id);
-    }
+
 }
