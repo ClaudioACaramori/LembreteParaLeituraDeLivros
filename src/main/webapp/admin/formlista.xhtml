@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xml:lang="en" lang="en">
+<head>
+    <title>Lista de Livros</title>
+</head>
+    <body>
+        <h3>Lista de Livros</h3>
+        <h:form>
+            <h:dataTable value="#{livroController.livro}">
+                <h:column binding="#{livroController.livro.nomeDoLivro}"/>
+                <h:column binding="#{livroController.livro.numeroDePaginas}"/>
+                <h:column binding="#{lembreteController.lembrete.horaMinuto}"/>
+                <h:column binding="#{lembreteController.lembrete.diasDaSemanaList}"/>
+            </h:dataTable>
+        </h:form>
+    </body>
+</html>

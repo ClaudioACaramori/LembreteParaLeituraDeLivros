@@ -39,6 +39,7 @@
           <element id="library" level="project" name="Maven: com.sun.faces:jsf-api:2.2.8" />
           <element id="library" level="project" name="Maven: com.sun.faces:jsf-impl:2.2.8" />
           <element id="library" level="project" name="Maven: org.primefaces:primefaces:5.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.1.0.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

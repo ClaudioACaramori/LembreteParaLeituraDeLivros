@@ -112,5 +112,12 @@
             <artifactId>primefaces</artifactId>
             <version>5.0</version>
         </dependency>
+
+        <!-- Framework Spring Módulo Web - ContextLoaderListener -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.1.0.RELEASE</version>
+        </dependency>
     </dependencies>
 </project>

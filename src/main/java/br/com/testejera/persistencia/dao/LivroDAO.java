@@ -12,6 +12,5 @@ public interface LivroDAO<L> {
     void salvar(Livro livro) throws DAOException;
     void remover(Livro livro);
     List<Livro> buscarTodos();
-
     Livro buscarNomeDoLivro(String nomeDoLivro) throws DAOException;
 }

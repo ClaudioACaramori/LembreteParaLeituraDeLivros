@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xml:lang="en" lang="en">
+<head>
+    <title>Lembrete</title>
+</head>
+    <body>
+        <h3>Cadastro de Lembretes</h3>
+        <h:form>
+            <h:outputLabel value="Hora: "/>
+            <h:inputText value="#{lembreteController.lembrete.horaMinuto}"/>
+
+            <h:outputLabel value="Dias"/>
+            <h:selectManyCheckbox value="#{livroController.lembrete.diasDaSemanaList[0]}"/>
+            <h:selectManyCheckbox value="#{livroController.lembrete.diasDaSemanaList[1]}"/>
+            <h:selectManyCheckbox value="#{livroController.lembrete.diasDaSemanaList[2]}"/>
+            <h:selectManyCheckbox value="#{livroController.lembrete.diasDaSemanaList[3]}"/>
+            <h:selectManyCheckbox value="#{livroController.lembrete.diasDaSemanaList[4]}"/>
+            <h:selectManyCheckbox value="#{livroController.lembrete.diasDaSemanaList[5]}"/>
+            <h:selectManyCheckbox value="#{livroController.lembrete.diasDaSemanaList[6]}"/>
+
+            <h:outputLabel value="Livro: "/>
+            <h:selectOneMenu value="#{livroController.livro.nomeDoLivro}"/>
+
+            <h:commandButton value="Salvar" actionListener="#{lembreteController.salvar}"/>
+        </h:form>
+
+    </body>
+</html>

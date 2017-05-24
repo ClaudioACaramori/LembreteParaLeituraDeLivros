@@ -12,9 +12,8 @@ public class Livro {
 
     private static final long serialVersionUID = 7822113190612870420L;
 
-    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    @Id private Integer id;
 
     private String nomeDoLivro;
 
