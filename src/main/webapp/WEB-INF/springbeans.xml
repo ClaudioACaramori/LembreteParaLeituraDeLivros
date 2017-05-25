@@ -45,10 +45,4 @@
 		  class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
-
-	<!--<bean id="livro" class="br.com.testejera.entidade.Livro">
-		<property name="nomeDoLivro" value="Apostila Fabrica de Programador - Modulo I"/>
-		<property name="numeroDePaginas" value="54"/>
-	</bean>-->
-
 </beans>

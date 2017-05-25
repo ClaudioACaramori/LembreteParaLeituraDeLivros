@@ -1,0 +1,16 @@
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\service\exception\ServiceException.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\controller\LembreteController.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\entidade\Livro.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\persistencia\jdbc\ConexaoFactory.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\persistencia\dao\LivroDAO.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\controller\LivroController.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\persistencia\jpa\EntityManagerFactory.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\service\LivroService.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\persistencia\jpa\LivroDAOJpa.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\persistencia\jpa\LembreteDAOJpa.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\DiasDaSemana.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\persistencia\dao\DAOException.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\persistencia\dao\LembreteDAO.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\persistencia\jdbc\ConexaoFactoryTest.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\service\LembreteService.java
+C:\Users\claud\IdeaProjects\LembreteParaLeituraDeLivros\src\main\java\br\com\testejera\entidade\Lembrete.java

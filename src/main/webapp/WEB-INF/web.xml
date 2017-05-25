@@ -3,9 +3,9 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
                              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
-    <display-name>fdpweb2</display-name>
+    <display-name>testejera</display-name>
     <welcome-file-list>
-        <welcome-file>formlivro.xhtml</welcome-file>
+        <welcome-file>formpaginainicial.xhtml</welcome-file>
     </welcome-file-list>
 
     <servlet>

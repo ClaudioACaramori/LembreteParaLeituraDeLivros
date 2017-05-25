@@ -32,14 +32,6 @@ public class LivroController {
         }
     }
 
-    @Override
-    public String toString() {
-
-        return "LivroController{" +
-                "livro=" + livro +
-                '}';
-    }
-
     public Livro getLivro() {
         return livro;
     }

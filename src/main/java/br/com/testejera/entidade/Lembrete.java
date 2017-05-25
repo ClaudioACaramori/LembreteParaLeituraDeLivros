@@ -1,14 +1,19 @@
 package br.com.testejera.entidade;
 
-import br.com.testejera.DiasDaSemana;
-
-import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * Created by claud on 20/05/2017.
  */
+@Entity
+@Table(name = "livro")
 public class Lembrete {
-    private DiasDaSemana[] diasDaSemanaList;
+
+    private static final long serialVersionUID = 7822113190612870420L;
+
+    private DiasDaSemana diasDaSemana;
     private String horaMinuto;
 
     @Override
@@ -18,7 +23,7 @@ public class Lembrete {
 
         Lembrete lembrete = (Lembrete) o;
 
-        if (diasDaSemanaList != null ? !diasDaSemanaList.equals(lembrete.diasDaSemanaList) : lembrete.diasDaSemanaList != null)
+        if (diasDaSemana != null ? !diasDaSemana.equals(lembrete.diasDaSemana) : lembrete.diasDaSemana != null)
             return false;
         return horaMinuto != null ? horaMinuto.equals(lembrete.horaMinuto) : lembrete.horaMinuto == null;
 
@@ -26,7 +31,7 @@ public class Lembrete {
 
     @Override
     public int hashCode() {
-        int result = diasDaSemanaList != null ? diasDaSemanaList.hashCode() : 0;
+        int result = diasDaSemana != null ? diasDaSemana.hashCode() : 0;
         result = 31 * result + (horaMinuto != null ? horaMinuto.hashCode() : 0);
         return result;
     }
@@ -34,17 +39,17 @@ public class Lembrete {
     @Override
     public String toString() {
         return "Lembrete{" +
-                "diasDaSemanaList=" + diasDaSemanaList +
+                "diasDaSemana=" + diasDaSemana +
                 ", horaMinuto='" + horaMinuto + '\'' +
                 '}';
     }
 
-    public DiasDaSemana[] getDiasDaSemanaList() {
-        return diasDaSemanaList;
+    public DiasDaSemana getDiasDaSemana() {
+        return diasDaSemana;
     }
 
-    public void setDiasDaSemanaList(DiasDaSemana[] diasDaSemanaList) {
-        this.diasDaSemanaList = diasDaSemanaList;
+    public void setDiasDaSemana(DiasDaSemana diasDaSemana) {
+        this.diasDaSemana = diasDaSemana;
     }
 
     public String getHoraMinuto() {
@@ -53,5 +58,16 @@ public class Lembrete {
 
     public void setHoraMinuto(String horaMinuto) {
         this.horaMinuto = horaMinuto;
+    }
+
+    private String id;
+
+    @Id
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

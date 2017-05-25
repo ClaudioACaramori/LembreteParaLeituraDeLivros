@@ -7,15 +7,14 @@
         <title>Cadastro de Livros</title>
     </h:head>
     <body>
-        <h3>Cadastro de Livros</h3>
         <h:form>
-            <h:outputLabel value="Nome: "/>
+            Nome:
             <h:inputText value="#{livroController.livro.nomeDoLivro}"/>
 
-            <h:outputLabel value="Numero de paginas: "/>
-            <h:inputText value="#{livroController.livro.numeroDePaginas}"/>
+            Numero de paginas:
+            <h:inputText value="#{livroController.livro.numeroDePaginas}" size="4"/>
 
-            <h:commandButton value="Salvar" actionListener="#{livroController.salvar}"/>
+            <h:commandButton value="Salvar" actionListener="livroController.salvar"/>
         </h:form>
     </body>
 </html>

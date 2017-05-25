@@ -1,0 +1,3 @@
+br\com\testejera\service\LembreteService.class
+br\com\testejera\persistencia\jpa\LembreteDAOJpa.class
+br\com\testejera\controller\LembreteController.class

@@ -1,4 +1,4 @@
-package br.com.testejera;
+package br.com.testejera.entidade;
 
 /**
  * Created by claud on 20/05/2017.

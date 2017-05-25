@@ -1,8 +1,1 @@
-/META-INF/
 /br/
-/persistencia/
-/TestDataBase.class
-/TestDataSource.class
-/TestLivroDAO.class
-/TestLivroDAOJPA.class
-/TestLivroService.class
